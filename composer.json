@@ -1,6 +1,6 @@
 {
-    "name": "weprovide/valet-plus",
-    "app": "Valet+",
+    "name": "dyyy-dev/valet-apache",
+    "app": "Valet Apache",
     "description": "Blazing fast macOS PHP development environment",
     "license": "MIT",
     "authors": [
@@ -19,6 +19,10 @@
         {
             "name": "Johann Zelger",
             "email": "j.zelger@techdivision.com"
+        },
+        {
+            "name": "Alexander Danylyschyn",
+            "email": "alex@dyyy.dev"
         }
     ],
     "autoload": {
@@ -32,7 +36,8 @@
         }
     },
     "replace": {
-        "laravel/valet": "*"
+        "laravel/valet": "*",
+        "weprovide/valet-plus": "*"
     },
     "require": {
         "php": ">=5.6",
