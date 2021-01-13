@@ -55,6 +55,26 @@ class Brew
     }
 
     /**
+     * Determine if a compatible apache version is Homebrewed.
+     *
+     * @return bool
+     */
+    public function hasInstalledApache()
+    {
+        return $this->installed('httpd');
+    }
+
+    /**
+     * Return name of the httpd service installed via Homebrewed.
+     *
+     * @return string
+     */
+    public function apacheServiceName()
+    {
+        return $this->installed('httpd') ? 'httpd' : 'httpd';
+    }
+
+    /**
      * Ensure that the given formula is installed.
      *
      * @param  string $formula

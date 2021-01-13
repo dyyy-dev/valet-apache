@@ -57,7 +57,7 @@ class Valet
     /**
      * Determine if this is the latest version of Valet.
      *
-     * @param  string  $currentVersion
+     * @param  object  $currentVersion
      * @return bool
      */
     public function onLatestVersion($currentVersion)
